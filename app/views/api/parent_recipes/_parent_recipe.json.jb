@@ -1,0 +1,10 @@
+
+{
+
+  id: parent_recipe.id,
+  title: parent_recipe.title,
+  ingredients: parent_recipe.ingredients,
+  directions: parent_recipe.directions,
+  category_id: parent_recipe.category_id,
+  user_id: parent_recipe.user_id,
+}

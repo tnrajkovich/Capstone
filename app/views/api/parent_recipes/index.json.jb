@@ -1,0 +1,4 @@
+
+@parent_recipes.map do |parent_recipe|
+  render partial: "parent_recipe.json.jb", locals: { parent_recipe: parent_recipe }
+end
