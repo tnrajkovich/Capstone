@@ -2,7 +2,7 @@ class Api::ParentRecipesController < ApplicationController
   before_action :authenticate_admin
 
   def index
-    @parent_recipes = Product.all
+    @parent_recipes = ParentRecipe.all
 
     if params[:search]
       @parent_recipes = @parent_recipes.where("name ILIKE ?", "%" + params[:search].to_s + "%")
