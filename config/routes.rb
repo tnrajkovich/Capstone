@@ -7,6 +7,14 @@ Rails.application.routes.draw do
   patch "/user_recipes/:id" => "user_recipes#update"
   delete "/user_recipes/:id" => "user_recipes#destroy"
 
+  get "/parent_recipes" => "parent_recipes#index"
+  get "/parent_recipes/new" => "parent_recipes#new"
+  post "/parent_recipes" => "parent_recipes#create"
+  get "/parent_recipes/:id" => "parent_recipes#show"
+  get "/parent_recipes/:id/edit" => "parent_recipes#edit"
+  patch "/parent_recipes/:id" => "parent_recipes#update"
+  delete "/parent_recipes/:id" => "parent_recipes#destroy"
+
   namespace :api do
     get "/parent_recipes" => "parent_recipes#index"
     get "/parent_recipes/:id" => "parent_recipes#show"
@@ -19,12 +27,6 @@ Rails.application.routes.draw do
     post "/user_recipes" => "user_recipes#create"
     patch "/user_recipes/:id" => "user_recipes#update"
     delete "/user_recipes/:id" => "user_recipes#destroy"
-
-    get "/images" => "images#index"
-    get "/images/:id" => "images#show"
-    post "/images" => "images#create"
-    patch "/images/:id" => "images#update"
-    delete "/images/:id" => "images#destroy"
 
     post "/users" => "users#create"
 
