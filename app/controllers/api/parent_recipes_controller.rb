@@ -1,6 +1,4 @@
 class Api::ParentRecipesController < ApplicationController
-  before_action :authenticate_admin
-
   def index
     @parent_recipes = ParentRecipe.all
 
@@ -19,9 +17,11 @@ class Api::ParentRecipesController < ApplicationController
   def create
     @parent_recipe = ParentRecipe.new(
       id: params["id"],
-      name: params["name"],
+      title: params["title"],
       ingredients: params["ingredients"],
       directions: params["directions"],
+      user_id: current_user.id,
+      category_id: params["category_id"],
     )
     if @parent_recipe.save
       render "show.json.jb"
