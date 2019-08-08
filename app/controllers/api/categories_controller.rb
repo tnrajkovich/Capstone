@@ -3,7 +3,7 @@ class Api::CategoriesController < ApplicationController
     @categories = Category.all
 
     if params[:search]
-      @category = @category.where("name ILIKE ?", "%" + params[:search].to_s + "%")
+      @categories = @categories.where("name ILIKE ?", "%" + params[:search].to_s + "%")
     end
 
     render "index.json.jb"

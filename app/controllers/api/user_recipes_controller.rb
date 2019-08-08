@@ -20,7 +20,7 @@ class Api::UserRecipesController < ApplicationController
       description: params["description"],
       new_ingredients: params["new_ingredients"],
       user_id: current_user.id,
-      parent_recipe_id: params.find_by["parent_recipe_id"],
+      parent_recipe_id: params["parent_recipe_id"],
     )
     if @user_recipe.save
       render "show.json.jb"
