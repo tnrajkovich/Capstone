@@ -5,6 +5,8 @@
   title: parent_recipe.title,
   ingredients: parent_recipe.ingredients,
   directions: parent_recipe.directions,
+  image_url: parent_recipe.image_url,
   category_id: parent_recipe.category_id,
   user_id: parent_recipe.user_id,
+
 }

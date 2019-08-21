@@ -20,6 +20,7 @@ class Api::ParentRecipesController < ApplicationController
       title: params["title"],
       ingredients: params["ingredients"],
       directions: params["directions"],
+      image_url: params["image_url"],
       user_id: current_user.id,
       category_id: params["category_id"],
     )
@@ -36,6 +37,7 @@ class Api::ParentRecipesController < ApplicationController
     @parent_recipe.name = params["name"] || @parent_recipe.name
     @parent_recipe.ingredients = params["ingredients"] || @parent_recipe.ingredients
     @parent_recipe.directions = params["directions"] || @parent_recipe.directions
+    @parent_recipe.image_url = params["image_url"] || @parent_recipe.image_url
     if @parent_recipe.save
       render "show.json.jb"
     else
