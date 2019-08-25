@@ -11,6 +11,8 @@ class Api::ParentRecipesController < ApplicationController
 
   def show
     @parent_recipe = ParentRecipe.find_by(id: params["id"].to_i)
+    @parent_recipe = ParentRecipe.includes(:user_recipes).find(params[:id])
+
     render "show.json.jb"
   end
 
