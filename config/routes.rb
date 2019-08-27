@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get "/categories" => "categories#index"
 
+  post "/users" => "users#create"
+
   namespace :api do
     get "/parent_recipes" => "parent_recipes#index"
     get "/parent_recipes/:id" => "parent_recipes#show"

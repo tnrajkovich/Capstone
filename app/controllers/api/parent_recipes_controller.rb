@@ -1,4 +1,6 @@
 class Api::ParentRecipesController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
+
   def index
     @parent_recipes = ParentRecipe.all
 

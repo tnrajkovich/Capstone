@@ -1,4 +1,6 @@
 class Api::UserRecipesController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
+
   def index
     @user_recipes = UserRecipe.all
 
