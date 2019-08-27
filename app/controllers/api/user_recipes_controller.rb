@@ -23,8 +23,8 @@ class Api::UserRecipesController < ApplicationController
       description: params["description"],
       new_ingredients: params["new_ingredients"],
       user_id: current_user.id,
-      parent_recipe_id: ParentRecipe.find(params[:id]),
-      image: cloudinary_url,
+      parent_recipe_id: params["parent_recipe_id"],
+      image_url: cloudinary_url,
       vote: 0,
     )
     if @user_recipe.save

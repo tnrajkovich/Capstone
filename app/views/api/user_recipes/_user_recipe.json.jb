@@ -6,4 +6,5 @@
   new_ingredients: user_recipe.new_ingredients,
   parent_recipe_id: user_recipe.parent_recipe_id,
   user_id: user_recipe.user_id,
+  image_url: user_recipe.image_url,
 }
