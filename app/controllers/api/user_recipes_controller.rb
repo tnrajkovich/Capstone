@@ -17,7 +17,7 @@ class Api::UserRecipesController < ApplicationController
   end
 
   def create
-    response = Cloudinary::Uploader.upload(params[:image])
+    response = Cloudinary::Uploader.upload(params[:image_url])
     cloudinary_url = response["secure_url"]
     @user_recipe = UserRecipe.new(
       description: params["description"],
