@@ -8,5 +8,5 @@
   image_url: parent_recipe.image_url,
   category_id: parent_recipe.category_id,
   user_id: parent_recipe.user_id,
-  user_recipes: parent_recipe.user_recipes,
+  user_recipes: parent_recipe.user_recipes.sort_by { |h| h[:vote] }.reverse,
 }

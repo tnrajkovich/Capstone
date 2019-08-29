@@ -3,7 +3,7 @@ class Api::UserRecipesController < ApplicationController
 
   def index
     @user_recipes = UserRecipe.all
-    @user_recipes.sort_by { |vote| descending }
+    @user_recipes.sort_by { |h| h[:vote] }.reverse
 
     if params[:search]
       @user_recipes = @user_recipes.where("name ILIKE ?", "%" + params[:search].to_s + "%")
