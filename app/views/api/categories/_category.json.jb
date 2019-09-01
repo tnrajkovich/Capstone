@@ -1,5 +1,5 @@
 {
 
   name: category.name,
-
+  parent_recipes: category.parent_recipes,
 }
