@@ -36,7 +36,6 @@ class Api::ParentRecipesController < ApplicationController
 
   def update
     @parent_recipe = ParentRecipe.find_by(id: params["id"])
-    @parent_recipe.id = params["id"] || @parent_recipe.id
     @parent_recipe.name = params["name"] || @parent_recipe.name
     @parent_recipe.ingredients = params["ingredients"] || @parent_recipe.ingredients
     @parent_recipe.directions = params["directions"] || @parent_recipe.directions

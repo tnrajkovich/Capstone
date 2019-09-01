@@ -37,9 +37,9 @@ class Api::UserRecipesController < ApplicationController
 
   def update
     @user_recipe = UserRecipe.find_by(id: params["id"])
-    @user_recipe.id = params["id"] || @user_recipe.id
     @user_recipe.description = params["description"] || @user_recipe.description
     @user_recipe.new_ingredients = params["new_ingredients"] || @user_recipe.new_ingredients
+    @user_recipe.vote = params["vote"] || @user_recipe.vote
     if @user_recipe.save
       render "show.json.jb"
     else
