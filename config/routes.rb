@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   delete "/parent_recipes/:id" => "parent_recipes#destroy"
 
   get "/categories" => "categories#index"
+  get "/categories/:id" => "categories#show"
 
   post "/users" => "users#create"
 
@@ -33,6 +34,7 @@ Rails.application.routes.draw do
     delete "/user_recipes/:id" => "user_recipes#destroy"
 
     get "/categories" => "categories#index"
+    get "/categories/:id" => "categories#show"
 
     post "/users" => "users#create"
 
