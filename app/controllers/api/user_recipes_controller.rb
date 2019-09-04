@@ -18,13 +18,14 @@ class Api::UserRecipesController < ApplicationController
   end
 
   def create
+    parent_recipe = ParentRecipe.find_by(title: params[:parent_recipe_id])
     response = Cloudinary::Uploader.upload(params[:image_url])
     cloudinary_url = response["secure_url"]
     @user_recipe = UserRecipe.new(
       description: params["description"],
       new_ingredients: params["new_ingredients"],
       user_id: current_user.id,
-      parent_recipe_id: ParentRecipe.find_by(params[:title]).id,
+      parent_recipe_id: parent_recipe.id,
       image_url: cloudinary_url,
       vote: 0,
     )
