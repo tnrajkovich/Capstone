@@ -172,11 +172,8 @@ ParentRecipe.create!(title: "Huevo a la Mexicana", ingredients: "", directions: 
 UserRecipe.create!(description: "Updating Carbonara the authentic way", new_ingredients: "Use guanciale rather than pancetta to add a punch of flavor.", parent_recipe_id: 1, user_id: 2, vote: 35)
 UserRecipe.create!(description: "Carbonara from Lazio", new_ingredients: "We use a heavy cream sauce. Some say it's not carbonara but I disagree!", parent_recipe_id: 1, user_id: 1, vote: 16)
 UserRecipe.create!(description: "A refreshing modern take on Pad Thai courtesy of my grandmother", new_ingredients: "Paprika and zucchini", parent_recipe_id: 2, user_id: 1, vote: 20)
-UserRecipe.create!(description: "My cousin's twist on pho", new_ingredients: "Add pineapple. I know it sounds crazy but trust me.", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 42)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 20)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 4)
+UserRecipe.create!(description: "My cousin's twist on pad thai", new_ingredients: "Add pineapple. I know it sounds crazy but trust me.", parent_recipe_id: 3, user_id: 2, vote: 4)
+UserRecipe.create!(description: "Interesting twist on pad thai", new_ingredients: "Use cayenne pepper.", parent_recipe_id: 2, user_id: 2, vote: 42)
 
 Category.create!(name: "Italian")
 Category.create!(name: "Thai")
