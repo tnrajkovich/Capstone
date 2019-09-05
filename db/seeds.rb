@@ -22,6 +22,7 @@ Add pasta to the water and boil until a bit firmer than al dente. Just before pa
 Empty serving bowl of hot water. Dry it and add hot pasta mixture. Stir in cheese mixture, adding some reserved pasta water if needed for creaminess. Serve immediately, dressing it with a bit of additional grated pecorino and pepper.", 
 category_id: 1, 
 user_id: 1, 
+image_url: "https://www.simplyrecipes.com/wp-content/uploads/2012/02/pasta-carbonara-vertical-a-1200.jpg",
 video: "http://www.youtube.com/embed/MbRm5s3i2ik")
 ParentRecipe.create!(title: "Pad Thai", ingredients: "Kosher salt
 8 oz. wide rice noodles
@@ -45,6 +46,7 @@ Push the shrimp and vegetables to one side of the pan and pour in the egg. Scram
 Garnish with green onions and roasted peanuts before serving.", 
 category_id: 2, 
 user_id: 1, 
+image_url: "https://www.recipetineats.com/wp-content/uploads/2018/05/Chicken-Pad-Thai_9.jpg",
 video: "https://www.youtube.com/embed/DsyfYJ5Ou3g")
 ParentRecipe.create!(title: "Bahn Mi", ingredients: "½ cup rice vinegar
 ¼ cup water
@@ -71,7 +73,11 @@ Sprinkle the chicken breast with garlic salt and pepper, and broil on slotted br
 
 Slice the baguette in half the long way, and pull the center of the bread out of the baguette halves, leaving a cavity for the filling. Place the baguette halves under the broiler to lightly toast, 2 to 3 minutes.
 
-To assemble the bahn mi sandwich, spread each half of the toasted baguette with mayonnaise, and fill the cavity of the bottom half of the bread with broiled chicken, cucumber slices, pickled carrot, onion, and radish, cilantro leaves, and jalapeno pepper. Squeeze a wedge of lime over the filling, and top with the other half of the baguette.", category_id: 3, user_id: 2, video: "https://www.youtube.com/embed/k4HA1ejw_hA")
+To assemble the bahn mi sandwich, spread each half of the toasted baguette with mayonnaise, and fill the cavity of the bottom half of the bread with broiled chicken, cucumber slices, pickled carrot, onion, and radish, cilantro leaves, and jalapeno pepper. Squeeze a wedge of lime over the filling, and top with the other half of the baguette.", 
+category_id: 3, 
+user_id: 2, 
+image_url: "https://media2.fdncms.com/stranger/imager/u/large/25030781/pratt_banh-mi_04-web.jpg",
+video: "https://www.youtube.com/embed/k4HA1ejw_hA")
 ParentRecipe.create!(title: "Tom Yum Soup", ingredients: "2 liters of water
 4 stalks of lemongrass
 1 inch chunk of galangal
@@ -109,47 +115,68 @@ Finally chop up a handful of fresh cilantro, throw it in the soup, and give your
 You now have Tom yum goong nam sai (ต้มยำกุ้งน้ำใส), the clear version of tom yum.", 
 category_id: 2, 
 user_id: 1, 
+image_url: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tom_yam_kung_maenam.jpg",
 video: "https://www.youtube.com/embed/hXaaZiMgvgI")
-ParentRecipe.create!(title: "Bahn Mi", ingredients: "½ cup rice vinegar
-¼ cup water
-¼ cup white sugar
-¼ cup carrot, cut into 1/16-inch-thick matchsticks
-¼ cup white (daikon) radish, cut into 1/16-inch-thick matchsticks
-¼ cup thinly sliced white onion
-1 skinless, boneless chicken breast half  
-garlic salt to taste
-ground black pepper to taste
-1 (12 inch) French baguette
-4 tablespoons mayonnaise
-¼ cup thinly sliced cucumber
-1 tablespoon fresh cilantro leaves
-1 small jalapeno pepper - seeded and cut into 1/16-inch-thick matchsticks
-1 wedge lime", 
-directions: "Make Pho!", category_id: 2, user_id: 2, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 1, user_id: 3, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 3, user_id: 2, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 4, user_id: 1, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 5, user_id: 2, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 6, user_id: 3, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 7, user_id: 2, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 8, user_id: 1, video: )
-ParentRecipe.create!(title: "Pho", ingredients: "Pho ingredients (broth), meat, veggies", directions: "Make Pho!", category_id: 9, user_id: 2, video: )
+ParentRecipe.create!(title: "Pad Krapow Gai", ingredients: "⅓ cup chicken broth
+1 tablespoon oyster sauce
+1 tablespoon soy sauce, or as needed
+2 teaspoons fish sauce
+1 teaspoon white sugar
+1 teaspoon brown sugar
+2 tablespoons vegetable oil
+1 pound skinless, boneless chicken thighs, coarsely chopped
+¼ cup sliced shallots
+4 cloves garlic, minced
+2 tablespoons minced Thai chilies, Serrano, or other hot pepper
+1 cup very thinly sliced fresh basil leaves
+2 cups hot cooked rice", 
+directions: "
+Whisk chicken broth, oyster sauce, soy sauce, fish sauce, white sugar, and brown sugar together in a bowl until well blended.
 
-UserRecipe.create!(description: "Updating Carbonara the OG way", new_ingredients: "Guanciale", parent_recipe_id: 1, user_id: 2, vote: 35)
-UserRecipe.create!(description: "Another take on Carbonara", new_ingredients: "Bacon", parent_recipe_id: 1, user_id: 1, vote: 16)
-UserRecipe.create!(description: "New take on Pad Thai", new_ingredients: "Paprika", parent_recipe_id: 2, user_id: 1, vote: 20)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
-UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 3, user_id: 2, vote: 4)
+Heat large skillet over high heat. Drizzle in oil. Add chicken and stir fry until it loses its raw color, 2 to 3 minutes. Stir in shallots, garlic, and sliced chilies. Continue cooking on high heat until some of the juices start to caramelize in the bottom of the pan, about 2 or 3 more minutes. Add about a tablespoon of the sauce mixture to the skillet; cook and stir until sauce begins to caramelize, about 1 minute.
+
+Pour in the rest of the sauce. Cook and stir until sauce has deglazed the bottom of the pan. Continue to cook until sauce glazes onto the meat, 1 or 2 more minutes. Remove from heat.
+
+Stir in basil. Cook and stir until basil is wilted, about 20 seconds. Serve with rice.", 
+category_id: 2, 
+user_id: 2, 
+image_url: "https://thewoksoflife.com/wp-content/uploads/2016/06/thai-basil-chicken-8.jpg",
+video: "https://www.youtube.com/embed/SoFSmNaKTVU")
+ParentRecipe.create!(title: "Bucatini all'Amatriciana", ingredients: "
+  2 Tbsp. extra-virgin olive oil
+4 oz. thinly sliced guanciale, pancetta, or chopped unsmoked bacon
+1/2 tsp. crushed red pepper flakes
+1/2 tsp. freshly ground black pepper
+3/4 cup minced onion
+2 cloves garlic, minced
+1 28-oz. can peeled tomatoes with juices, crushed by hand t
+Kosher salt
+12 oz. dried bucatini or spaghetti
+1/4 cup finely grated Pecorino (about 1 oz.)", 
+directions: "Heat oil in a large heavy skillet over medium heat. Add guanciale and sauté until crisp and golden, about 4 minutes. Add pepper flakes and black pepper; stir for 10 seconds. Add onion and garlic; cook, stirring often, until soft, about 8 minutes. Add tomatoes, reduce heat to low, and cook, stirring occasionally, until sauce thickens, 15-20 minutes.
+
+Meanwhile, bring a large pot of water to a boil. Season with salt; add the pasta and cook, stirring occasionally, until 2 minutes before al dente. Drain, reserving 1 cup of pasta cooking water.
+
+Add drained pasta to sauce in skillet and toss vigorously with tongs to coat. Add 1/2 cup of the reserved pasta water and cook until sauce coats pasta and pasta is al dente, about 2 minutes. (Add a little pasta water if sauce is too dry.) Stir in cheese and transfer pasta to warmed bowls.", 
+category_id: 1, 
+user_id: 3, 
+image_url: "http://cdn1.girlgonegourmet.com/wp-content/uploads/2014/10/Bucatini-AllAmatriciana-1.jpg",
+video: "https://www.youtube.com/embed/5gUhB3hbRnk")
+ParentRecipe.create!(title: "Coq Au Vin", ingredients: "", directions: "", category_id: 4, user_id: 2, image_url: "https://www.oliviascuisine.com/wp-content/uploads/2016/07/7fb2f130c3b1cd86b6fd7b1057686b0b205a176c.jpeg", video: "")
+ParentRecipe.create!(title: "Sesame Soba Noodles", ingredients: "", directions: "", category_id: 5, user_id: 2, image_url: "https://bmexdi064h-flywheel.netdna-ssl.com/wp-content/uploads/2018/12/Sesame-Soba-Noodles-foodiecrush.com-015.jpg", video: "")
+ParentRecipe.create!(title: "Tandoori Chicken", ingredients: "", directions: "", category_id: 6, user_id: 3, image_url: "https://www.simplyrecipes.com/wp-content/uploads/2010/06/tandoori-chicken-horiz-a-1600-1024x683.jpg", video: "")
+ParentRecipe.create!(title: "Moussaka", ingredients: "", directions: "", category_id: 7, user_id: 2, image_url: "https://www.thespruceeats.com/thmb/ebrhSdUxPatlVVPYlAV1lmhegXE=/3644x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/moussaka-124760167-58189dea3df78cc2e898027f.jpg", video: "")
+ParentRecipe.create!(title: "Ceviche", ingredients: "", directions: "", category_id: 8, user_id: 1, image_url: "https://natashaskitchen.com/wp-content/uploads/2019/05/Ceviche-Recipe-4.jpg", video: "")
+ParentRecipe.create!(title: "Huevo a la Mexicana", ingredients: "", directions: "", category_id: 9, user_id: 2, image_url: "https://mk0mexicanfoodjovj3d.kinstacdn.com/wp-content/uploads/2015/07/Huevo-a-la-Mexicana.jpg", video: "")
+
+UserRecipe.create!(description: "Updating Carbonara the authentic way", new_ingredients: "Use guanciale rather than pancetta to add a punch of flavor.", parent_recipe_id: 1, user_id: 2, vote: 35)
+UserRecipe.create!(description: "Carbonara from Lazio", new_ingredients: "We use a heavy cream sauce. Some say it's not carbonara but I disagree!", parent_recipe_id: 1, user_id: 1, vote: 16)
+UserRecipe.create!(description: "A refreshing modern take on Pad Thai courtesy of my grandmother", new_ingredients: "Paprika and zucchini", parent_recipe_id: 2, user_id: 1, vote: 20)
+UserRecipe.create!(description: "My cousin's twist on pho", new_ingredients: "Add pineapple. I know it sounds crazy but trust me.", parent_recipe_id: 3, user_id: 2, vote: 4)
+UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 42)
+UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 20)
+UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 4)
+UserRecipe.create!(description: "Interesting twist on Pho", new_ingredients: "Pineapple", parent_recipe_id: 2, user_id: 2, vote: 4)
 
 Category.create!(name: "Italian")
 Category.create!(name: "Thai")
