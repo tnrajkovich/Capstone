@@ -162,12 +162,12 @@ category_id: 1,
 user_id: 3, 
 image_url: "http://cdn1.girlgonegourmet.com/wp-content/uploads/2014/10/Bucatini-AllAmatriciana-1.jpg",
 video: "https://www.youtube.com/embed/5gUhB3hbRnk")
-ParentRecipe.create!(title: "Coq Au Vin", ingredients: "", directions: "", category_id: 4, user_id: 2, image_url: "https://www.oliviascuisine.com/wp-content/uploads/2016/07/7fb2f130c3b1cd86b6fd7b1057686b0b205a176c.jpeg", video: "")
-ParentRecipe.create!(title: "Sesame Soba Noodles", ingredients: "", directions: "", category_id: 5, user_id: 2, image_url: "https://bmexdi064h-flywheel.netdna-ssl.com/wp-content/uploads/2018/12/Sesame-Soba-Noodles-foodiecrush.com-015.jpg", video: "")
-ParentRecipe.create!(title: "Tandoori Chicken", ingredients: "", directions: "", category_id: 6, user_id: 3, image_url: "https://www.simplyrecipes.com/wp-content/uploads/2010/06/tandoori-chicken-horiz-a-1600-1024x683.jpg", video: "")
-ParentRecipe.create!(title: "Moussaka", ingredients: "", directions: "", category_id: 7, user_id: 2, image_url: "https://www.thespruceeats.com/thmb/ebrhSdUxPatlVVPYlAV1lmhegXE=/3644x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/moussaka-124760167-58189dea3df78cc2e898027f.jpg", video: "")
-ParentRecipe.create!(title: "Ceviche", ingredients: "", directions: "", category_id: 8, user_id: 1, image_url: "https://natashaskitchen.com/wp-content/uploads/2019/05/Ceviche-Recipe-4.jpg", video: "")
-ParentRecipe.create!(title: "Huevo a la Mexicana", ingredients: "", directions: "", category_id: 9, user_id: 2, image_url: "https://mk0mexicanfoodjovj3d.kinstacdn.com/wp-content/uploads/2015/07/Huevo-a-la-Mexicana.jpg", video: "")
+ParentRecipe.create!(title: "Coq Au Vin", ingredients: "", directions: "", category_id: 5, user_id: 2, image_url: "https://www.oliviascuisine.com/wp-content/uploads/2016/07/7fb2f130c3b1cd86b6fd7b1057686b0b205a176c.jpeg", video: "")
+ParentRecipe.create!(title: "Sesame Soba Noodles", ingredients: "", directions: "", category_id: 6, user_id: 2, image_url: "https://bmexdi064h-flywheel.netdna-ssl.com/wp-content/uploads/2018/12/Sesame-Soba-Noodles-foodiecrush.com-015.jpg", video: "")
+ParentRecipe.create!(title: "Tandoori Chicken", ingredients: "", directions: "", category_id: 7, user_id: 3, image_url: "https://www.simplyrecipes.com/wp-content/uploads/2010/06/tandoori-chicken-horiz-a-1600-1024x683.jpg", video: "")
+ParentRecipe.create!(title: "Moussaka", ingredients: "", directions: "", category_id: 8, user_id: 2, image_url: "https://www.thespruceeats.com/thmb/ebrhSdUxPatlVVPYlAV1lmhegXE=/3644x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/moussaka-124760167-58189dea3df78cc2e898027f.jpg", video: "")
+ParentRecipe.create!(title: "Ceviche", ingredients: "", directions: "", category_id: 9, user_id: 1, image_url: "https://natashaskitchen.com/wp-content/uploads/2019/05/Ceviche-Recipe-4.jpg", video: "")
+ParentRecipe.create!(title: "Huevo a la Mexicana", ingredients: "", directions: "", category_id: 10, user_id: 2, image_url: "https://mk0mexicanfoodjovj3d.kinstacdn.com/wp-content/uploads/2015/07/Huevo-a-la-Mexicana.jpg", video: "")
 
 UserRecipe.create!(description: "Updating Carbonara the authentic way", new_ingredients: "Use guanciale rather than pancetta to add a punch of flavor.", parent_recipe_id: 1, user_id: 2, vote: 35)
 UserRecipe.create!(description: "Carbonara from Lazio", new_ingredients: "We use a heavy cream sauce. Some say it's not carbonara but I disagree!", parent_recipe_id: 1, user_id: 1, vote: 16)

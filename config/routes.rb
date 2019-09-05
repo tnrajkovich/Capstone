@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   get "/categories" => "categories#index"
   get "/categories/:id" => "categories#show"
+  post "/categories" => "categories#create"
 
   post "/users" => "users#create"
 
@@ -35,6 +36,7 @@ Rails.application.routes.draw do
 
     get "/categories" => "categories#index"
     get "/categories/:id" => "categories#show"
+    post "/categories" => "categories#create"
 
     post "/users" => "users#create"
 
